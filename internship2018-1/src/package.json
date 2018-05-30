@@ -1,0 +1,28 @@
+{
+  "name": "internship2018-1",
+  "version": "0.0.1",
+  "description": "This is test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximkhanin/frontend.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Maxim Khanin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximkhanin/frontend/issues"
+  },
+  "homepage": "https://github.com/maximkhanin/frontend#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
