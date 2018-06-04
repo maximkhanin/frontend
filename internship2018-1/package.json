@@ -4,10 +4,12 @@
   "description": "This is test project for Internship",
   "main": "index.js",
   "scripts": {
+    "start": "http-server ./src",
+    "build": "webpack ./src/index.js ./src/assets/bundle.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/software-kiev/shkola1010_public.git"
+    "url": ""
   },
   "keywords": [
     "html",
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/software-kiev/shkola1010_public#readme",
   "dependencies": {},
   "devDependencies": {
+    "webpack": "^3.12.0",
     "http-server": "^0.11.1"
   }
 }
