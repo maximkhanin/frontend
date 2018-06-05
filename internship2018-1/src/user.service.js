@@ -7,7 +7,7 @@ function showMessage() {
 export function confirmAge(){
     var age = prompt("What is your age?");
     
-    if(age==="18"){
+    if(!isNaN(age) && parseInt(age) >= 18){
         showMessage();
     }
     else{
