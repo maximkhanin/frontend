@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { ArticleModel } from './article-details/article.model';
-import {ArticleListService} from './article-list.service'
+import { ArticleListService } from './article-list.service';
 
 @Component({
 	selector: 'article-list',
@@ -10,7 +10,7 @@ import {ArticleListService} from './article-list.service'
 export class ArticleListComponent {
 	articles: ArticleModel[];
 
-	constructor(private service: ArticleListService){
+	constructor(private service: ArticleListService) {
 		this.articles = this.service.getArticles();
 	}
 }

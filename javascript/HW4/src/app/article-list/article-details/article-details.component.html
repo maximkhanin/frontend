@@ -1,12 +1,10 @@
 <div>
-    <p>
-        Стаття з рубрики: {{heading}}
-    </p>
+    <p>Стаття з рубрики: {{heading}}</p>
     <h4>
-        <a (click)="changeColor()"><font color="{{color}}">{{ article.title }}</font></a>
+        <a (click)="changeColor()">
+            <span [style.color]="color">{{ article.title }}</span>
+        </a>
     </h4>
-    <p>
-        {{ article.shortDescription }}
-    </p>
+    <p>{{ article.shortDescription }}</p>
     <input type="text" [(ngModel)]="heading">
 </div>
