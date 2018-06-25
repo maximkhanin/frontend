@@ -11,10 +11,10 @@ export class ArticleDetailsComponent {
     @Input()
     article: ArticleModel;
 
-    color = "black";
-    changeColor(){
-        this.color = "gray";
-    }
+    color = 'black';
+    heading = '';
 
-    heading:string = "";
+    changeColor() {
+        this.color = 'gray';
+    }
 }
