@@ -10,7 +10,12 @@ import { ArticleListService } from './article-list.service';
 export class ArticleListComponent {
 	articles: ArticleModel[];
 
-	constructor(private service: ArticleListService) {
-		this.articles = this.service.getArticles();
+	constructor(private service: ArticleListService){
+
+	}
+
+	ngOnInit(){
+		this.service.getArticles()
+		.subscribe(response => this.articles = response);
 	}
 }

@@ -3,24 +3,25 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { BooksListComponent } from './books-list/books-list.component';
-import { BookDetailsComponent } from './books-list/book-details/book-details.component';
 import { ArticleDetailsComponent } from './article-list/article-details/article-details.component';
 import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleListService } from './article-list/article-list.service';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutes } from './app.routes';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		BookDetailsComponent,
-		BooksListComponent,
 		ArticleDetailsComponent,
 		ArticleListComponent
 	],
 	imports: [
 		BrowserModule,
-		FormsModule
+		FormsModule,
+		HttpClientModule,
+		RouterModule.forRoot(AppRoutes)
 	],
 	bootstrap: [AppComponent],
 	providers: [ArticleListService]
