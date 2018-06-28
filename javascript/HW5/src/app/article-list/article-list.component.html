@@ -1,4 +1,3 @@
 <div class="article-container" *ngFor="let item of articles">
-	<a [routerLink]="[item.id]">Перейти до статті</a>
-	<article-details [article]="item"></article-details>
+	<a [routerLink]="[item.id]">{{item.title}}</a>
 </div>

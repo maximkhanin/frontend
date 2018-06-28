@@ -1,5 +1,5 @@
-<div>
-    <p [routerLink]="[article.id]">Стаття з рубрики: {{heading}}</p>
+<div class="article-details-container">
+    <p>Стаття з рубрики: {{heading}}</p>
     <h4>
         <a (click)="changeColor()">
             <span [style.color]="color">{{ article.title }}</span>
